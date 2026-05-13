@@ -1,21 +1,3 @@
-
-打包完成后，在生成的 `dist` 目录下提取 `msg_eml_exchange.exe` 即可跨平台离线使用。
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-#### 特技
-
-1.  使用 Readme_XXX.md 来支持不同的语言，例如 Readme_en.md, Readme_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee # MSG_TO_EML
-
 #### 介绍
 一款完全离线、无需依赖 Outlook 环境的 MSG 转 EML 批量转换工具。基于 PyQt6 构建现代化 UI，专为高保密企业内网环境设计，支持拖拽操作与极速大文件处理。
 
