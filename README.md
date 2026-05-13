@@ -13,7 +13,7 @@
 1. **获取入口**：点击右侧发行版Release。
 2. **下载程序**：下载"Msg_To_Eml_Exchange"标题下"msg_eml_exchange.exe"(仅限Win系统)
 3. **双击运行**：运行后根据界面提示进行操作即可。
-![image-20241203144528697](https://gitee.com/caoyongzhuo/MSG_TO_EML/blob/master/pico/程序界面.png
+![image-20241203144528697](https://gitee.com/caoyongzhuo/MSG_TO_EML/raw/master/pico/程序界面.png
 
 #### 安装教程
 
