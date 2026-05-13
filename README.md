@@ -9,6 +9,12 @@
     *   读取端：集成 `extract-msg` 开源库，完全脱离 Windows/Outlook COM 接口，直接对 `.msg` (OLE 复合文档格式) 进行底层二进制解包。
     *   写入端：利用 Python 官方内置的 `email` 与 `email.policy` 库，重新组装 MIME 多段结构，并针对巨型附件的 Base64 换行算法进行了 `policy.default` 提速优化。
 
+#### 下载使用
+1. **获取入口**：点击右侧发行版Release。
+2. **下载程序**：下载"Msg_To_Eml_Exchange"标题下"msg_eml_exchange.exe"(仅限Win系统)
+3. **双击运行**：运行后根据界面提示进行操作即可。
+![image-20241203144528697](https://gitee.com/caoyongzhuo/MSG_TO_EML/blob/master/pico/程序界面.png
+
 #### 安装教程
 
 1.  **获取源码**：将本仓库克隆或下载到本地解压。
