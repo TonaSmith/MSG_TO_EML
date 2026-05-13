@@ -1,23 +1,5 @@
-# MSG_TO_EML
-
-#### 介绍
-一款完全离线、无需依赖 Outlook 环境的 MSG 转 EML 批量转换工具。基于 PyQt6 构建现代化 UI，专为高保密企业内网环境设计，支持拖拽操作与极速大文件处理。
-
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+```
+    打包完成后，在生成的 `dist` 目录下提取 `msg_eml_exchange.exe` 即可跨平台离线使用。
 
 #### 参与贡献
 
@@ -26,12 +8,108 @@
 3.  提交代码
 4.  新建 Pull Request
 
+#### 特技
+
+1.  使用 Readme_XXX.md 来支持不同的语言，例如 Readme_en.md, Readme_zh.md
+2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
+3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
+4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
+5.  Gitee # MSG_TO_EML
+
+#### 介绍
+一款完全离线、无需依赖 Outlook 环境的 MSG 转 EML 批量转换工具。基于 PyQt6 构建现代化 UI，专为高保密企业内网环境设计，支持拖拽操作与极速大文件处理。
+
+#### 软件架构
+本项目采用 MVC (Model-View-Controller) 分层架构，确保界面与核心转换逻辑解耦，保证在高负载下软件的稳定性：
+*   **表现层 (View)**：基于 `PyQt6` 构建的现代化交互界面，支持原生的系统级文件拖拽识别，并通过 `QProgressBar` 和 `QTextEdit` 提供实时可视化的任务反馈。
+*   **调度层 (Controller)**：使用 `QThread` 和 `pyqtSignal` 实现多线程异步任务调度。所有的邮件解析与转换均在独立后台线程进行，彻底杜绝主界面假死卡顿现象。
+*   **解析引擎层 (Model)**：
+    *   读取端：集成 `extract-msg` 开源库，完全脱离 Windows/Outlook COM 接口，直接对 `.msg` (OLE 复合文档格式) 进行底层二进制解包。
+    *   写入端：利用 Python 官方内置的 `email` 与 `email.policy` 库，重新组装 MIME 多段结构，并针对巨型附件的 Base64 换行算法进行了 `policy.default` 提速优化。
+
+#### 安装教程
+
+1.  **获取源码**：将本仓库克隆或下载到本地解压。
+2.  **创建虚拟环境（推荐）**：在项目根目录下打开终端，执行 `python -m venv .venv` 创建虚拟环境。Windows 环境下执行 `.\.venv\Scripts\activate` 激活环境。
+3.  **安装依赖**：在已激活的虚拟环境中，执行命令安装必须的第三方库：
+    ```bash
+    pip install PyQt6 extract-msg
+    ```
+
+#### 使用说明
+
+1.  **启动程序**：在终端运行 `python msg_eml_exchange.py` 即可打开图形界面。
+2.  **执行转换**：
+    *   将准备好的 `.msg` 文件直接拖入软件窗口，或点击“添加 MSG 文件”进行批量选择。
+    *   在“路径设置”栏中，选择转换后 `.eml` 文件的输出保存目录。
+    *   勾选列表中需要转换的文件，点击下方蓝色的“🚀 开始转换”按钮。
+3.  **独立打包 (可选)**：如果您需要将其发给未安装 Python 的同事，可以在虚拟环境中使用 PyInstaller 打包为独立的绿色单文件：
+    ```bash
+    pip install pyinstaller
+    pyinstaller -F -w msg_eml_exchange.py
+    ```
+    打包完成后，在生成的 `dist` 目录下提取 `msg_eml_exchange.exe` 即可跨平台离线使用。
+
+#### 参与贡献
+
+1.  Fork 本仓库
+2.  新建 Feat_xxx 分支
+3.  提交代码
+4.  新建 Pull Request
 
 #### 特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
+1.  使用 Readme_XXX.md 来支持不同的语言，例如 Readme_en.md, Readme_zh.md
 2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
 3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
 4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
 5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+6.  Gitee 封面人物是一档用来展示# MSG_TO_EML
+
+#### 介绍
+一款完全离线、无需依赖 Outlook 环境的 MSG 转 EML 批量转换工具。基于 PyQt6 构建现代化 UI，专为高保密企业内网环境设计，支持拖拽操作与极速大文件处理。
+
+#### 软件架构
+本项目采用 MVC (Model-View-Controller) 分层架构，确保界面与核心转换逻辑解耦，保证在高负载下软件的稳定性：
+*   **表现层 (View)**：基于 `PyQt6` 构建的现代化交互界面，支持原生的系统级文件拖拽识别，并通过 `QProgressBar` 和 `QTextEdit` 提供实时可视化的任务反馈。
+*   **调度层 (Controller)**：使用 `QThread` 和 `pyqtSignal` 实现多线程异步任务调度。所有的邮件解析与转换均在独立后台线程进行，彻底杜绝主界面假死卡顿现象。
+*   **解析引擎层 (Model)**：
+    *   读取端：集成 `extract-msg` 开源库，完全脱离 Windows/Outlook COM 接口，直接对 `.msg` (OLE 复合文档格式) 进行底层二进制解包。
+    *   写入端：利用 Python 官方内置的 `email` 与 `email.policy` 库，重新组装 MIME 多段结构，并针对巨型附件的 Base64 换行算法进行了 `policy.default` 提速优化。
+
+#### 安装教程
+
+1.  **获取源码**：将本仓库克隆或下载到本地解压。
+2.  **创建虚拟环境（推荐）**：在项目根目录下打开终端，执行 `python -m venv .venv` 创建虚拟环境。Windows 环境下执行 `.\.venv\Scripts\activate` 激活环境。
+3.  **安装依赖**：在已激活的虚拟环境中，执行命令安装必须的第三方库：
+    ```bash
+    pip install PyQt6 extract-msg
+    ```
+
+#### 使用说明
+
+1.  **启动程序**：在终端运行 `python msg_eml_exchange.py` 即可打开图形界面。
+2.  **执行转换**：
+    *   将准备好的 `.msg` 文件直接拖入软件窗口，或点击“添加 MSG 文件”进行批量选择。
+    *   在“路径设置”栏中，选择转换后 `.eml` 文件的输出保存目录。
+    *   勾选列表中需要转换的文件，点击下方蓝色的“🚀 开始转换”按钮。
+3.  **独立打包 (可选)**：如果您需要将其发给未安装 Python 的同事，可以在虚拟环境中使用 PyInstaller 打包为独立的绿色单文件：
+    ```bash
+    pip install pyinstaller
+    pyinstaller -F -w msg_eml_exchange.py
+    ```
+    打包完成后，在生成的 `dist` 目录下提取 `msg_eml_exchange.exe` 即可跨平台离线使用。
+
+#### 参与贡献
+
+1.  Fork 本仓库
+2.  新建 Feat_xxx 分支
+3.  提交代码
+4.  新建 Pull Request
+
+#### 特技
+
+1.  使用 Readme_XXX.md 来支持不同的语言，例如 Readme_en.md, Readme_zh.md
+2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
+
+```
