@@ -30,11 +30,6 @@
     pip install pyinstaller
     pyinstaller -F -w msg_eml_exchange.py
     ```
-    打包完成后，在生成的 `dist` 目录下提取 `msg_eml_exchange.exe` 即可跨平台离线使用。
+4. 打包完成后，在生成的 `dist` 目录下提取 `msg_eml_exchange.exe` 即可跨平台离线使用。
 
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+[![Gitee Stars](https://gitee.com/caoyongzhuo/MSG_TO_EML/badge/star.svg?theme=dark)](https://gitee.com/caoyongzhuo/MSG_TO_EML/stargazers)
