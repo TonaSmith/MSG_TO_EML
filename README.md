@@ -39,7 +39,15 @@
     ```
 4. 打包完成后，在生成的 `dist` 目录下提取 `msg_eml_exchange.exe` 即可跨平台离线使用。
 
-[[![Gitee Stars](https://gitee.com/caoyongzhuo/MSG_TO_EML/badge/star.svg?theme=dark)](https://gitee.com/caoyongzhuo/MSG_TO_EML/stargazers)](https://www.star-history.com/?repos=TonaSmith%2FMSG_TO_EML&type=timeline&logscale=&legend=top-left)
+## Star History
+
+<a href="https://www.star-history.com/?repos=TonaSmith%2FMSG_TO_EML&type=timeline&logscale=&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=TonaSmith/MSG_TO_EML&type=timeline&theme=dark&logscale&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=TonaSmith/MSG_TO_EML&type=timeline&logscale&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=TonaSmith/MSG_TO_EML&type=timeline&logscale&legend=top-left" />
+ </picture>
+</a>
 ![Python Version](https://img.shields.io/badge/python-3.12+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-Stable-brightgreen.svg)
