@@ -1,4 +1,9 @@
-#### 介绍
+[![Gitee Stars](https://gitee.com/caoyongzhuo/MSG_TO_EML/badge/star.svg?theme=dark)](https://gitee.com/caoyongzhuo/MSG_TO_EML/stargazers)
+![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Status](https://img.shields.io/badge/status-Stable-brightgreen.svg)
+
+#### 程序介绍
 一款完全离线、无需依赖 Outlook 环境的 MSG 转 EML 批量转换工具。基于 PyQt6 构建现代化 UI，专为高保密企业内网环境设计，支持拖拽操作与极速大文件处理。
 
 #### 软件架构
