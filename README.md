@@ -1,5 +1,5 @@
-```
-    打包完成后，在生成的 `dist` 目录下提取 `msg_eml_exchange.exe` 即可跨平台离线使用。
+
+打包完成后，在生成的 `dist` 目录下提取 `msg_eml_exchange.exe` 即可跨平台离线使用。
 
 #### 参与贡献
 
@@ -111,5 +111,3 @@
 
 1.  使用 Readme_XXX.md 来支持不同的语言，例如 Readme_en.md, Readme_zh.md
 2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-
-```
