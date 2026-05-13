@@ -39,7 +39,7 @@
     ```
 4. 打包完成后，在生成的 `dist` 目录下提取 `msg_eml_exchange.exe` 即可跨平台离线使用。
 
-[![Gitee Stars](https://gitee.com/caoyongzhuo/MSG_TO_EML/badge/star.svg?theme=dark)](https://gitee.com/caoyongzhuo/MSG_TO_EML/stargazers)
+[[![Gitee Stars](https://gitee.com/caoyongzhuo/MSG_TO_EML/badge/star.svg?theme=dark)](https://gitee.com/caoyongzhuo/MSG_TO_EML/stargazers)](https://www.star-history.com/?repos=TonaSmith%2FMSG_TO_EML&type=timeline&logscale=&legend=top-left)
 ![Python Version](https://img.shields.io/badge/python-3.12+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-Stable-brightgreen.svg)
