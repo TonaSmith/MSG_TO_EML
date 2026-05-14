@@ -48,6 +48,7 @@
    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=TonaSmith/MSG_TO_EML&type=timeline&logscale&legend=top-left" />
  </picture>
 </a>
+
 ![Python Version](https://img.shields.io/badge/python-3.12+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-Stable-brightgreen.svg)
